@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/L.Verak/static/css/main.5ee5b849.css",
+    "main.js": "/L.Verak/static/js/main.a609da99.js",
+    "index.html": "/L.Verak/index.html",
+    "main.5ee5b849.css.map": "/L.Verak/static/css/main.5ee5b849.css.map",
+    "main.a609da99.js.map": "/L.Verak/static/js/main.a609da99.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ee5b849.css",
+    "static/js/main.a609da99.js"
+  ]
+}
