@@ -1,38 +1,271 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page-header{
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background-color: rgb(0, 0, 0);
   display: flex;
-  flex-direction: column;
+}
+.page-header h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+.page-logo{
+  width: 20%;
+  height: 100%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+
+}
+.page-logo img{
+  width: 80px;
+}
+.page-logo h1{
   color: white;
 }
+.page-menu{
+  width: 68%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-menu ul{
+  margin: 0;
+  padding: 0;
+}
+.page-menu ul li{
+  display: inline-block;
+  padding-left: 5rem;
+}
+.page-menu ul li a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.rl-user{
+  width: 18%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rl-user button{
+  font-weight: bold;
+}
+.first-screen{
+  top: 0;
+  /* position: absolute; */
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(71, 181, 245, 0.714);
+  display: flex;
+}
+.say-hi{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.say-hi h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+.say-hi h3{
+  font-size: 25px;
 
-.App-link {
-  color: #61dafb;
+}
+.profile{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+  /* z-index: -2; */
+  position: relative;
+}
+.profile img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 30% 1px;
+  border: solid 5px white;
+  position: relative;
+  /* z-index: 1; */
+}
+.say-hi img{
+  width:35px ;
+  padding-right: 10px;
+}
+ img.vert-move {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: translateY(-10px);
   }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.my-skill{
+  /* z-index: -1; */
+  /* top: 0; */
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  /* position: absolute; */
+  padding: 30px;
+}
+.skill-title{
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 5px rgba(128, 128, 128, 0.345);
+}
+.skill-title h1{
+  font-size: 30px;
+  color: black;
+  font-weight: 600;
+}
+.all-skill{
+  width: 50%;
+  height: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-skill{
+  width: 50%;
+  height: 100%;
+  /* background-color: rgb(0, 110, 255); */
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid ; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.the-skill{
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+.title-logo{
+    width: 70%;
+    /* background-color: brown; */
+}
+.title-logo h1{
+  font-size: 20px;
+  font-weight: bold;
+}
+.line{
+  width: 100%;
+  height: 10px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 2px;
+  margin-bottom: 10px;
+  text-align: end;
+  display: flex;
+  justify-content: end;
+}
+.line p{
+  font-size: 8px;
+}
+.level-skill:nth-child(2) {
+  width: 80%;
+}
+.level-skill:nth-child(4){
+  width: 90%;
+}
+.level-skill:nth-child(6){
+  width: 75%;
+}
+.level-skill:nth-child(8) {
+  width: 70%;
+}
+.level-skill:nth-child(10) {
+  width: 80%;
+}
+.level-skill:nth-child(12) {
+  width: 75%;
+}
+.level-skill:nth-child(14) {
+  width: 70%;
+}
+.level-skill:nth-child(16) {
+  width: 65%;
+}
+.level-skill:nth-child(18) {
+  width: 50%;
+}
+.level-skill:nth-child(20) {
+  width:90%;
+}
+.level-skill:nth-child(22) {
+  width: 80%;
+}
+.level-skill:nth-child(24) {
+  width: 50%;
+}
+.level-skill{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.level-skill p{
+  font-size: 16px;
+}
+.title-logo h1{
+  margin: 0;
+  padding: 0;
+}
+.line{
+  margin: 0;
+  padding: 0;
+}
+.level-skill p{
+  margin: 0;
+  padding: 0;
+}
+.logo-skill img{
+  width: 100%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.study{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 174, 255, 0.757);
 }
